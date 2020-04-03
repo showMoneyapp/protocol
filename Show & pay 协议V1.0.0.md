@@ -37,7 +37,7 @@ featureCode,paymentUrl,walletId,tokenIndex,random,hash
 | walletId    | 付款方钱包id (用来给wallet-service识别walletId)              |
 | tokenIndex  | 约定的token索引，默认0为bsv（1个字节） |
 | random      | wallet带的的随机码（防止两次交易）字符串长度为6              |
-| hash        | SHA256(featureCode,paymentUrl,walletId,tokenIndex,random)  摘要的前8字节对应字符串 |
+| hash        | SHA256(featureCode,paymentUrl,walletId,tokenIndex,random)  摘要的前12位 |
 
 一个例子是
 
